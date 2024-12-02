@@ -22,9 +22,4 @@ services:
             SPRING_JPA_HIBERNATE_DDL_AUTO: create
         depends_on:
             - mysql-db
-        command: >
-            sh -c "while ! nc -z mysql-db 3306; do
-            echo 'Esperando a MySQL...';
-            sleep 3;
-            done;
-            java -jar app.jar"
+            
