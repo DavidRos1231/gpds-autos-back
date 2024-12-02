@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AutomovilRepository extends JpaRepository<Automovil, Long> {
+	//cambio sin importancia
 }
